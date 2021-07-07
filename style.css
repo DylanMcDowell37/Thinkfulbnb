@@ -107,7 +107,7 @@ form div {
 
 form select,
 form input {
-  width: 200px; 
+  width: 150px; 
 }
 
 form button {
@@ -146,7 +146,8 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media (min-width: 800px) {
+
+@media (min-width: 1000px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -157,18 +158,17 @@ footer p {
   form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  */
   }
-  form div {
+   form div {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 10px 20px 10px 5px;
+    /* justify-content: space-between; */
+    margin: auto;
   }
-  form button { 
-    width: 20%;
-    margin-left: 50px;
-  }
+ 
+  form button {
+    width:15% ;
+  } 
 
   #about .group,
   #host .group {
@@ -223,4 +223,5 @@ footer p {
   form input {
     width: 140px;
   }
+  
 }
