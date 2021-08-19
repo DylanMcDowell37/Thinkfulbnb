@@ -101,14 +101,14 @@ form label {
 form div {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0 20px 0;
+  margin:10px 0 20px 0;
   
 }
 
-form select,
+/* form select,
 form input {
-  width: 200px; 
-}
+  width: 150px; 
+} */
 
 form button {
   background-color: #ff385c;
@@ -146,7 +146,8 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media (min-width: 800px) {
+
+@media (min-width: 1020px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -157,18 +158,21 @@ footer p {
   form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
-  form div {
+  form select,
+  form input {
+  width: 150px; 
+}
+  
+   form div {
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 10px 20px 10px 5px;
+    margin: auto;
   }
-  form button { 
-    width: 20%;
-    margin-left: 50px;
-  }
+ 
+  form button {
+    width:15% ;
+  } 
 
   #about .group,
   #host .group {
@@ -214,13 +218,24 @@ footer p {
     margin: 10px;
   }
 }
+@media (max-width: 1020px)
+{
+  form select,
+  form input,
+  form div {
+    align-items: center;
+    width: 300px; 
+    margin-left: auto;
+    margin-right: auto;
+}
 
+}
 @media (max-width: 480px) {
   .logo {
     font-size: 52px;
-  }
+  } 
   form select,
   form input {
-    width: 140px;
-  }
+  width: 140px; 
+}
 }
